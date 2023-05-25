@@ -6,7 +6,7 @@ const mongo = require('../utils/mongo');
 class ProjectController extends Controller {
   async getTemplate() {
     const { ctx } = this;
-    const data = await mongo().query('project');
+    const data = await mongo().query('template');
     ctx.body = data;
   }
 }
